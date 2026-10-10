@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="rental-erd" name="Rental schema">
+    <mxGraphModel dx="820" dy="620" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="0" pageScale="1" pageWidth="820" pageHeight="620" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="centers" value="centers" style="swimlane;horizontal=1;startSize=28;collapsible=0;rounded=0;html=0;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="70" width="240" height="106" />
+        </mxCell>
+        <mxCell id="centers_center_id" value="center_id (PK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="centers">
+          <mxGeometry as="geometry" x="0" y="28" width="240" height="26" />
+        </mxCell>
+        <mxCell id="centers_center_name" value="center_name" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="centers">
+          <mxGeometry as="geometry" x="0" y="54" width="240" height="26" />
+        </mxCell>
+        <mxCell id="centers_location" value="location" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="centers">
+          <mxGeometry as="geometry" x="0" y="80" width="240" height="26" />
+        </mxCell>
+        <mxCell id="employees" value="employees" style="swimlane;horizontal=1;startSize=28;collapsible=0;rounded=0;html=0;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="450" y="70" width="240" height="184" />
+        </mxCell>
+        <mxCell id="employees_employee_id" value="employee_id (PK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="employees">
+          <mxGeometry as="geometry" x="0" y="28" width="240" height="26" />
+        </mxCell>
+        <mxCell id="employees_last_name" value="last_name" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="employees">
+          <mxGeometry as="geometry" x="0" y="54" width="240" height="26" />
+        </mxCell>
+        <mxCell id="employees_first_name" value="first_name" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="employees">
+          <mxGeometry as="geometry" x="0" y="80" width="240" height="26" />
+        </mxCell>
+        <mxCell id="employees_job_title" value="job_title" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="employees">
+          <mxGeometry as="geometry" x="0" y="106" width="240" height="26" />
+        </mxCell>
+        <mxCell id="employees_center_id" value="center_id (FK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="employees">
+          <mxGeometry as="geometry" x="0" y="132" width="240" height="26" />
+        </mxCell>
+        <mxCell id="employees_manager_id" value="manager_id (FK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="employees">
+          <mxGeometry as="geometry" x="0" y="158" width="240" height="26" />
+        </mxCell>
+        <mxCell id="vehicles" value="vehicles" style="swimlane;horizontal=1;startSize=28;collapsible=0;rounded=0;html=0;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="355" width="240" height="158" />
+        </mxCell>
+        <mxCell id="vehicles_vehicle_id" value="vehicle_id (PK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="vehicles">
+          <mxGeometry as="geometry" x="0" y="28" width="240" height="26" />
+        </mxCell>
+        <mxCell id="vehicles_model" value="model" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="vehicles">
+          <mxGeometry as="geometry" x="0" y="54" width="240" height="26" />
+        </mxCell>
+        <mxCell id="vehicles_vehicle_type" value="vehicle_type" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="vehicles">
+          <mxGeometry as="geometry" x="0" y="80" width="240" height="26" />
+        </mxCell>
+        <mxCell id="vehicles_hourly_rate" value="hourly_rate" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="vehicles">
+          <mxGeometry as="geometry" x="0" y="106" width="240" height="26" />
+        </mxCell>
+        <mxCell id="vehicles_center_id" value="center_id (FK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="vehicles">
+          <mxGeometry as="geometry" x="0" y="132" width="240" height="26" />
+        </mxCell>
+        <mxCell id="rentals" value="rentals" style="swimlane;horizontal=1;startSize=28;collapsible=0;rounded=0;html=0;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontFamily=Arial;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="450" y="355" width="240" height="184" />
+        </mxCell>
+        <mxCell id="rentals_rental_id" value="rental_id (PK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="rentals">
+          <mxGeometry as="geometry" x="0" y="28" width="240" height="26" />
+        </mxCell>
+        <mxCell id="rentals_vehicle_id" value="vehicle_id (FK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="rentals">
+          <mxGeometry as="geometry" x="0" y="54" width="240" height="26" />
+        </mxCell>
+        <mxCell id="rentals_employee_id" value="employee_id (FK)" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="rentals">
+          <mxGeometry as="geometry" x="0" y="80" width="240" height="26" />
+        </mxCell>
+        <mxCell id="rentals_start_date" value="start_date" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="rentals">
+          <mxGeometry as="geometry" x="0" y="106" width="240" height="26" />
+        </mxCell>
+        <mxCell id="rentals_hours" value="hours" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="rentals">
+          <mxGeometry as="geometry" x="0" y="132" width="240" height="26" />
+        </mxCell>
+        <mxCell id="rentals_applied_hourly_rate" value="applied_hourly_rate" style="text;html=0;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Arial;fontSize=13;fontColor=#000000;fontStyle=0;" vertex="1" parent="rentals">
+          <mxGeometry as="geometry" x="0" y="158" width="240" height="26" />
+        </mxCell>
+        <mxCell id="center_employees" value="" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1;startSize=10;endSize=10;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=1;exitY=0.6603773585;exitPerimeter=1;entryX=0;entryY=0.3804347826;entryPerimeter=1;" edge="1" parent="1" source="centers" target="employees">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="center_vehicles" value="" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1;startSize=10;endSize=10;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" edge="1" parent="1" source="centers" target="vehicles">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="employee_rentals" value="" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1;startSize=10;endSize=10;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" edge="1" parent="1" source="employees" target="rentals">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="vehicle_rentals" value="" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1;startSize=10;endSize=10;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=1;exitY=0.5379746835;exitPerimeter=1;entryX=0;entryY=0.4619565217;entryPerimeter=1;" edge="1" parent="1" source="vehicles" target="rentals">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="manager_reports" value="" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1;startSize=10;endSize=10;startArrow=ERzeroToOne;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=1;exitY=0.5;exitPerimeter=1;entryX=1;entryY=0.5;entryPerimeter=1;" edge="1" parent="1" source="employees_employee_id" target="employees_manager_id">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="735" y="111" />
+              <mxPoint x="735" y="241" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="620" viewBox="0 0 820 620" role="img" aria-labelledby="schema-title schema-description">
+  <title id="schema-title">Rental database schema</title>
+  <desc id="schema-description">Centers have employees and vehicles. Employees and vehicles have rentals. Employees may have one manager and any number of direct reports. PK marks primary keys; FK marks foreign keys.</desc>
+  <rect width="820" height="620" fill="#ffffff" />
+  <g id="relationships" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter">
+    <g id="center_employees">
+      <path d="M 300 140 L 450 140" />
+      <line x1="306" y1="134" x2="306" y2="146" />
+      <line x1="450" y1="140" x2="438" y2="146" />
+      <line x1="450" y1="140" x2="438" y2="134" />
+      <circle cx="432" cy="140" r="4" fill="#ffffff" />
+    </g>
+    <g id="center_vehicles">
+      <path d="M 180 176 L 180 355" />
+      <line x1="186" y1="182" x2="174" y2="182" />
+      <line x1="180" y1="355" x2="174" y2="343" />
+      <line x1="180" y1="355" x2="186" y2="343" />
+      <circle cx="180" cy="337" r="4" fill="#ffffff" />
+    </g>
+    <g id="employee_rentals">
+      <path d="M 570 254 L 570 355" />
+      <line x1="576" y1="260" x2="564" y2="260" />
+      <line x1="570" y1="355" x2="564" y2="343" />
+      <line x1="570" y1="355" x2="576" y2="343" />
+      <circle cx="570" cy="337" r="4" fill="#ffffff" />
+    </g>
+    <g id="vehicle_rentals">
+      <path d="M 300 440 L 450 440" />
+      <line x1="306" y1="434" x2="306" y2="446" />
+      <line x1="450" y1="440" x2="438" y2="446" />
+      <line x1="450" y1="440" x2="438" y2="434" />
+      <circle cx="432" cy="440" r="4" fill="#ffffff" />
+    </g>
+    <g id="manager_reports">
+      <path d="M 690 111 L 735 111 L 735 241 L 690 241" />
+      <line x1="696" y1="105" x2="696" y2="117" />
+      <circle cx="708" cy="111" r="4" fill="#ffffff" />
+      <line x1="690" y1="241" x2="702" y2="235" />
+      <line x1="690" y1="241" x2="702" y2="247" />
+      <circle cx="708" cy="241" r="4" fill="#ffffff" />
+    </g>
+  </g>
+  <g id="tables" font-family="Arial, sans-serif" fill="#000000">
+    <g id="centers">
+      <rect x="60" y="70" width="240" height="106" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <line x1="60" y1="98" x2="300" y2="98" stroke="#000000" stroke-width="1" />
+      <text x="180" y="84" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">centers</text>
+      <text id="centers_center_id" x="70" y="111" font-size="13" font-weight="normal" dominant-baseline="central">center_id (PK)</text>
+      <text id="centers_center_name" x="70" y="137" font-size="13" font-weight="normal" dominant-baseline="central">center_name</text>
+      <text id="centers_location" x="70" y="163" font-size="13" font-weight="normal" dominant-baseline="central">location</text>
+    </g>
+    <g id="employees">
+      <rect x="450" y="70" width="240" height="184" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <line x1="450" y1="98" x2="690" y2="98" stroke="#000000" stroke-width="1" />
+      <text x="570" y="84" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">employees</text>
+      <text id="employees_employee_id" x="460" y="111" font-size="13" font-weight="normal" dominant-baseline="central">employee_id (PK)</text>
+      <text id="employees_last_name" x="460" y="137" font-size="13" font-weight="normal" dominant-baseline="central">last_name</text>
+      <text id="employees_first_name" x="460" y="163" font-size="13" font-weight="normal" dominant-baseline="central">first_name</text>
+      <text id="employees_job_title" x="460" y="189" font-size="13" font-weight="normal" dominant-baseline="central">job_title</text>
+      <text id="employees_center_id" x="460" y="215" font-size="13" font-weight="normal" dominant-baseline="central">center_id (FK)</text>
+      <text id="employees_manager_id" x="460" y="241" font-size="13" font-weight="normal" dominant-baseline="central">manager_id (FK)</text>
+    </g>
+    <g id="vehicles">
+      <rect x="60" y="355" width="240" height="158" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <line x1="60" y1="383" x2="300" y2="383" stroke="#000000" stroke-width="1" />
+      <text x="180" y="369" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">vehicles</text>
+      <text id="vehicles_vehicle_id" x="70" y="396" font-size="13" font-weight="normal" dominant-baseline="central">vehicle_id (PK)</text>
+      <text id="vehicles_model" x="70" y="422" font-size="13" font-weight="normal" dominant-baseline="central">model</text>
+      <text id="vehicles_vehicle_type" x="70" y="448" font-size="13" font-weight="normal" dominant-baseline="central">vehicle_type</text>
+      <text id="vehicles_hourly_rate" x="70" y="474" font-size="13" font-weight="normal" dominant-baseline="central">hourly_rate</text>
+      <text id="vehicles_center_id" x="70" y="500" font-size="13" font-weight="normal" dominant-baseline="central">center_id (FK)</text>
+    </g>
+    <g id="rentals">
+      <rect x="450" y="355" width="240" height="184" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <line x1="450" y1="383" x2="690" y2="383" stroke="#000000" stroke-width="1" />
+      <text x="570" y="369" font-size="14" font-weight="bold" text-anchor="middle" dominant-baseline="central">rentals</text>
+      <text id="rentals_rental_id" x="460" y="396" font-size="13" font-weight="normal" dominant-baseline="central">rental_id (PK)</text>
+      <text id="rentals_vehicle_id" x="460" y="422" font-size="13" font-weight="normal" dominant-baseline="central">vehicle_id (FK)</text>
+      <text id="rentals_employee_id" x="460" y="448" font-size="13" font-weight="normal" dominant-baseline="central">employee_id (FK)</text>
+      <text id="rentals_start_date" x="460" y="474" font-size="13" font-weight="normal" dominant-baseline="central">start_date</text>
+      <text id="rentals_hours" x="460" y="500" font-size="13" font-weight="normal" dominant-baseline="central">hours</text>
+      <text id="rentals_applied_hourly_rate" x="460" y="526" font-size="13" font-weight="normal" dominant-baseline="central">applied_hourly_rate</text>
+    </g>
+  </g>
+</svg>
