@@ -90,16 +90,4 @@ For City Mamaia (vehicle 101):
 
 The previous value restarts at `NULL` for each vehicle. It does not refer to the preceding rental elsewhere in the network.
 
-## Manual screenshot shortlist
-
-Capture these five results in Oracle SQL Developer. Include the query comment, code and result columns. Use F9 for each `SELECT` and fetch all rows before checking the count.
-
-| Capture | What to show |
-|---|---|
-| Dataset verification | All four table counts: 3, 10, 12 and 30. |
-| H1 | All 10 employees with levels, director and hierarchy paths. |
-| C1 | The Mamaia row with 16 rentals and revenue of 1,005. |
-| A5 | All nine ranked vehicles, including Eforie's tie at rank 1. |
-| A6 | The first rows for vehicles 101 and 102, including each first-row `NULL`. |
-
-A3 can replace A5 if the presentation should focus on `RANGE` windows: capture all 12 vehicles and their rate-interval counts. Store the real captures in `docs/screenshots/` when available.
+See the [Oracle SQL Developer screenshots](screenshots/README.md) for captured query results.

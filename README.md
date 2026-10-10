@@ -44,4 +44,4 @@ If the tables already contain the sample data, rerun only the `SELECT` statement
 | A5 | Rented vehicle revenue ranking within each center, with ties |
 | A6 | Current and previous rental amounts for the same vehicle |
 
-See [expected results](docs/expected-results.md) for output counts and examples, including ranking ties and the first `NULL` returned by `LAG` for each vehicle.
+See [query screenshots](docs/screenshots/README.md) and [expected results](docs/expected-results.md).
