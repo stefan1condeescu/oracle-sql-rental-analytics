@@ -1,6 +1,6 @@
 # Expected results
 
-These checkpoints apply to the unchanged sample data in [rental_analytics.sql](../rental_analytics.sql). Amounts are in RON. They were independently calculated from the original data and checked against the original Oracle execution results; they are reference values, not fresh Oracle output from the English script.
+Reference outputs for the sample data in [rental_analytics.sql](../rental_analytics.sql). All amounts are in RON.
 
 ## Dataset check
 
@@ -92,7 +92,7 @@ The previous value restarts at `NULL` for each vehicle. It does not refer to the
 
 ## Manual screenshot shortlist
 
-Capture these five results after running the English script in Oracle SQL Developer. Include the query ID/comment, the complete selected query and the relevant result columns. Use Run Statement (F9) for each `SELECT`; fetch all rows before checking the displayed count.
+Capture these five results in Oracle SQL Developer. Include the query comment, code and result columns. Use F9 for each `SELECT` and fetch all rows before checking the count.
 
 | Capture | What to show |
 |---|---|
