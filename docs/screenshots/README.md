@@ -20,6 +20,12 @@ Mamaia meets both conditions: at least 10 rentals and revenue above 500 RON.
 
 ![Mamaia Center with 16 rentals and revenue of 1005 RON](c1-center-revenue.png)
 
+## A5: Vehicle revenue ranking
+
+Vehicles are ranked by revenue within each center. Eforie's equal totals share rank 1, followed by ranks 3 and 4.
+
+![Nine rented vehicles ranked by revenue within each center](a5-vehicle-revenue-ranking.png)
+
 ## A6: Previous rental amount
 
 `LAG` returns the preceding rental amount for each vehicle; its first rental has no previous amount.
